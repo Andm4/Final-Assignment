@@ -22,7 +22,8 @@ while True:
     print ("1) Wizard")
     print ("2) Elf")
     print ("3) Human")
-    print("4) Orc")
+    print ("4) Orc")
+    print ("5) End Game")
     character = input("Choose your character: ")
 
     if character.lower() in ["1", "wizard"]:
@@ -45,6 +46,9 @@ while True:
         my_hp = orc_hp
         my_damage = orc_damage
         break
+    elif character == "5":
+        print("Exiting the game.....")
+        exit()
     else:
         print ("Unknown character")
 
