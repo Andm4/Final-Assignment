@@ -21,17 +21,17 @@ while True:
     print ("3) Human")
     character = input("Choose your character: ")
 
-    if character == "1":
+    if character.lower() in ["1", "wizard"]:
         character = wizard
         my_hp = wizard_hp
         my_damage = wizard_damage
         break
-    elif character == "2":
+    elif character.lower() in ["2", "elf"]:
         character = elf
         my_hp = elf_hp
         my_damage = elf_damage
         break
-    elif character == "3":
+    elif character.lower() in ["3", "human"]:
         character = human
         my_hp = human_hp
         my_damage = human_damage
