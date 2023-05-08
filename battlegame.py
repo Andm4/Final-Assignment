@@ -1,4 +1,4 @@
-#Task 1
+#Task 1 WEEK ONE FINAL ASSIGNMENT   
 wizard = "Wizard"
 elf = "Elf"
 human = "Human"
@@ -19,16 +19,16 @@ orc_damage = 200
 
 #Task 2 & 3
 play_again = "y"
-while play_again.lower() == "y":
+while play_again.lower() == "y":  # Adding a nested while loop to ask user for replay
     while True:
         print ("1) Wizard")
         print ("2) Elf")
         print ("3) Human")
-        print ("4) Orc")
-        print ("5) End Game")
+        print ("4) Orc")   #Bonus: Added 4th character with stats
+        print ("5) End Game")  #Bonus: Added an end game option
         character = input("Choose your character: ")
 
-        if character.lower() in ["1", "wizard"]:
+        if character.lower() in ["1", "wizard"]:  #Bonus: added .lower() to always revert cap words to lower string
             character = wizard
             my_hp = wizard_hp
             my_damage = wizard_damage
@@ -77,4 +77,4 @@ while play_again.lower() == "y":
     
     play_again = input("Thou thy want to play again?? (y/n)")
     if play_again.lower() != "y":
-        print("The Dragon smites thee!!! Begone!!")
+        print("The Dragon smites thee!!! Begone!!")  # End of loop callsback the replay nested loop
