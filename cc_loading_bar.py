@@ -1,2 +1,2 @@
-for amount_loaded in range(100, 0, 1):
+for amount_loaded in range(0, 105, 5):
     print(amount_loaded)
