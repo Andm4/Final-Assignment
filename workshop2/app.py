@@ -28,3 +28,11 @@ while True:  # Infinite while loop
         break  # break out of loop if TRUE
     else:  # Print if False, restart loop.
         print("invalid credentials")
+
+# Task 3 second while loop
+user = atm_menu(name) #dec variable named User with atm argument
+
+while True:  # 2nd While loop after entering Login
+    print(user) # This will print the above argument
+    option = input("Choose an option: ") # Added option input for menu
+
