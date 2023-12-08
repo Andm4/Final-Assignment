@@ -34,8 +34,10 @@ while True:  # Infinite while loop
 
 # Task 3 second while loop
 user = atm_menu(name) #dec variable named User with atm argument
+print = (user) # This will print the above argument
 
 while True:  # 2nd While loop after entering Login
-    print(user) # This will print the above argument
     option = input("Choose an option: ") # Added option input for menu
-
+    user_balance = 0
+    if option == "1" or option.lower() == "balance":
+        account.show_balance(user_balance)
