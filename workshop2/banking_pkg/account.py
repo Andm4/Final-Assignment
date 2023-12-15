@@ -9,7 +9,7 @@ def deposit(balance):
 
 # Adding the function for withdraw
 def withdraw(balance):
-    amount = float(input("Enter amount to withdraw"))
+    amount = float(input("Enter amount to withdraw: "))
     return balance - amount
 
 # Adding a logout function

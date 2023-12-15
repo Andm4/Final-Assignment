@@ -1,4 +1,4 @@
-from banking_pkg import account
+from banking_pkg import account  #imported the account.py file
 
 
 def atm_menu(name):
@@ -14,8 +14,19 @@ def atm_menu(name):
 
 #Task 2 registration
 print("          === Automated Teller Machine ===          ")
-name = input("Enter name to register: ")  #declared a name input
-pin = input("Enter PIN: ") # Declared a pin input
+
+while True:
+    name = input("Enter name to register: ")  #declared a name input
+    if 1 <= len(name) <= 10:
+        break
+    else:
+        print("Invalid name length, Please enter a name between 1 and 10 characters.") # Bonus 1 having name limitation
+while True:
+    pin = input("Enter PIN: ") # Declared a pin input
+    if len(pin) == 4:
+        break
+    else: 
+        print("Invalid PIN length, Please enter a 4-digit PIN.") #bonus 2 having a PIN limitation 
 user_data = {name: {"pin": pin, "balance": 0}} # Balance Variable
 print(f"{name} has been registered with a starting balance of ${user_data[name]['balance']}")
 
