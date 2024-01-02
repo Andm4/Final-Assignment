@@ -16,3 +16,7 @@ best_states = states + states2
 # print("Washington" not in states) # You can also use the not Boolean operator along with it, to flip its return value from True to False or vice versa
   
 print(best_states) # Running this will combime both lists as a single one
+
+print(best_states[1:3]) # The following print statements here is using slicing method
+print(best_states[:2])
+print(best_states[4:])
