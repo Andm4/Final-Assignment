@@ -5,6 +5,11 @@ states = ["Washington", "Oregon", "California"]
 # for state in states:
     # print(state)  #Same concept but we are giving x a  descriptive name other than X
 
-for state in states: # Here we are adding a for loop instead of printing each item
-    state = state.lower() # This is listing each state again but we are now having them be lowercase
-    print(state)
+# for state in states: # Here we are adding a for loop instead of printing each item
+  #  state = state.lower() # This is listing each state again but we are now having them be lowercase
+   # print(state)
+
+print("Washington" in states)  # The "in" keyword can be used on its own, without a for loop 
+print("Tennessee" in states)  # You can use it to construct a conditional expression that evaluates as Boolean True or False
+print("Washington" not in states) # You can also use the not Boolean operator along with it, to flip its return value from True to False or vice versa
+  
