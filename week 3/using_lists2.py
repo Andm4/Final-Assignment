@@ -1,4 +1,6 @@
 states = ["Washington", "Oregon", "California"]
+states2 = ['Arizona', 'Ohio', 'Louisiana']  # We can concatenate two lists together with the addition operator (+).
+best_states = states + states2
 # for x in states:
   #  print(x)     #This will print out the above states
 
@@ -9,7 +11,8 @@ states = ["Washington", "Oregon", "California"]
   #  state = state.lower() # This is listing each state again but we are now having them be lowercase
    # print(state)
 
-print("Washington" in states)  # The "in" keyword can be used on its own, without a for loop 
-print("Tennessee" in states)  # You can use it to construct a conditional expression that evaluates as Boolean True or False
-print("Washington" not in states) # You can also use the not Boolean operator along with it, to flip its return value from True to False or vice versa
+# print("Washington" in states)  # The "in" keyword can be used on its own, without a for loop 
+# print("Tennessee" in states)  # You can use it to construct a conditional expression that evaluates as Boolean True or False
+# print("Washington" not in states) # You can also use the not Boolean operator along with it, to flip its return value from True to False or vice versa
   
+print(best_states) # Running this will combime both lists as a single one
